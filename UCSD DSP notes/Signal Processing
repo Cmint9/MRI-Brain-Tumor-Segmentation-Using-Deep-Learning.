@@ -1,1 +1,8 @@
+Nonuniform Sampling
+
+The signal from the PAX seismic station is not uniformly sampled. Uniformly sampled signals have equal spacing between every point, 
+but some of the samples in the pax signal were recorded with a small delay.
+
+Most spectral analysis techniques require signals to be uniformly sampled, so Signal Analyzer interpolates the signal to a uniform grid when you view the power spectrum. 
+To establish a consistent time base for all three signals, you can resample the pax signal uniformly 50 Hz.
 
