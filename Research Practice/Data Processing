@@ -1,0 +1,35 @@
+## This file to help me understand what should I do for one big data. 
+# I also will use two language( English and Chines) to help me understand. 
+
+Data cleaning/ processing 数据清洗     
+Dirty Data 脏数据, 缺失、错值、异常、混乱格式等
+Clean data 清理后数据
+
+Purpose： deal with the dirty data, becuase sometimes, we have dirty data. 
+把脏乱差的数据处理成能用的
+
+Python/ Pandas to do data processing 
+
+| 功能   | 函数/方法                                                        |
+| ---- | ------------------------------------------------------------ |
+| 查看缺失 | `df.isnull().sum()`                                          |
+| 填充缺失 | `df['Age'].fillna(df['Age'].mean())`                         |
+| 删除缺失 | `df.dropna()`                                                |
+| 去重    |  `df.drop_duplicates()`                                       |
+| 替换值  |  `df['Gender'].replace({'MALE': 'male'})`                     |
+| 类型转换 | `df['Age'] = df['Age'].astype(int)`                          |
+| 统一格式 | `df['Tumor Size'] = df['Tumor Size'].str.replace(' cm', '')` |
+
+For Data processing/ cleaning, what should we do? 
+
+
+| 任务 Task   | 举例  Examples                                      |
+| ----- | -------------------------------------------- |
+| 缺失值处理(Missing Value Handling)  | 填补、删除、插值、用均值/中位数代替 Fill in, delete, interpolate,replace with mean/median                          |
+| 异常值处理(outlier Handing) | 删除/替换不合理的数据（如年龄为 -1）                         |
+| 类型转换(Type Conversion) | "45" → int，"yes"/"no" → 1/0                  |
+| 统一格式(Uniform formatting)  | "5.2 cm" → 5.2；"Male"/"male"/"MALE" → "male" |
+| 去重(De-pulication)   | 有些数据重复记录，要去除                                 |
+| 规范列名(Normalize Column Names)  | 比如改成 `snake_case` 或 `camelCase`              |
+| 正则清理 (Regular cleaning) | 对字符串字段进行清理(Cleanup on String Fields) ，如提取数字、去除空格等                       |
+| 图像预处理( image preprocessing) | resize、归一化、crop、转灰度(convert to grayscale)、去噪等(denoise)   |
