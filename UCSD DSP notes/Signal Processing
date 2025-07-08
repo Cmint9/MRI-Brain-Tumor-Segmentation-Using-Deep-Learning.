@@ -6,3 +6,14 @@ but some of the samples in the pax signal were recorded with a small delay.
 Most spectral analysis techniques require signals to be uniformly sampled, so Signal Analyzer interpolates the signal to a uniform grid when you view the power spectrum. 
 To establish a consistent time base for all three signals, you can resample the pax signal uniformly 50 Hz.
 
+Different Sample Rates
+
+When you use the proper tools to interpolate a nonuniform sample to a uniform grid, the power spectrum of your signal shouldn't noticeably change.
+But if you change the sample rate, there is always a change in the power spectrum.
+The sample rate determines the highest frequency that can be correctly represented in a sampled signal. 
+So before you change the sample rate, you should look at the power spectrum to see where the frequencies are located.
+
+
+In the example above, the sample rate decreased from 100 Hz to 50 Hz. In the 100 Hz signal, before resampling, you should pay attention to the frequency content from 50 Hz to 100 Hz. 
+Most of the power is between 0 and 50 Hz. In the 50 Hz signal, after resampling, the frequency content between 0 and 50 Hz isn't significantly different from the original signal.
+
