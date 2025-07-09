@@ -1,0 +1,27 @@
+## This is one data set help us to do the data processing assume this dataset named "data.csv"
+
+ID,Age,Gender,Tumor Size,Label
+001,45,Male,5.2 cm,1
+002,,female,unknown,0
+003,39,male,4.3,yes
+004,-1,MALE,3.8 cm,no
+005,26,FEMALE,6.0cm,1
+
+# Data Processing: 
+# imprt the library 
+import pandas as pd
+# read the data
+df = pd.read_csv("data.csv")
+print(df)
+
+# Step2: 
+Missing Value Handling 
+mean_age = df["Age"].mean(skipna=True)
+df["Age"] = df["Age"].fillna(mean_age)
+print(df) 
+
+# Step3: delete the age < 0 
+df = df[df["Age] >= 0]
+print(df)
+
+
