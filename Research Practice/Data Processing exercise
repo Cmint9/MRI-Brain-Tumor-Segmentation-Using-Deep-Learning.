@@ -1,4 +1,4 @@
-## This is one data set help us to do the data processing assume this dataset named "data.csv"
+## This is one data that helps us to do the data processing. Assume this dataset is named "data.csv"
 
 ID,Age,Gender,Tumor Size,Label
 001,45,Male,5.2 cm,1
@@ -23,5 +23,15 @@ print(df)
 # Step3: delete the age < 0 
 df = df[df["Age] >= 0]
 print(df)
+
+# Step4: gender(lower) 
+df["Gender"] = df["Gender"].str.lower()
+print(df)
+
+# Step5: deal with Tumor Size, take off "cm", 
+df["Tumor Size"] = df["Tumor Size"].str.replace("cm","", regex = False)
+df["Tumor Size"] = df["Tumor Size'].str.replace(" ", '', regex =False)
+df["Tumor Size"] = pd.to_numeric(df["Tumor Size"], errors = "cperce")
+print(df) 
 
 
