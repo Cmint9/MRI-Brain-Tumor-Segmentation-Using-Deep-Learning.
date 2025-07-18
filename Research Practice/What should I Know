@@ -1,4 +1,4 @@
-If we want to do the research about Medical imaging, what should we do? 
+If we want to do research about Medical imaging, what should we do? 
 
 🧠 一、基础知识框架
 1. 医学影像基础（了解常见模态及其成像原理）
@@ -40,5 +40,63 @@ PET / SPECT（功能成像）
   检测（Detection）
 
   配准（Registration）
+
+  For this professional part, we can try to learn the professional knowledge from "AI for Medical Diagnosis (DeepLearning.AI)"
+
+3. Technology: 
+
+  编程语言：Python（必备）、MATLAB（传统影像处理常用）。
+
+  工具库：OpenCV、ITK（医学影像处理）、PyTorch/TensorFlow（深度学习）。
+
+  数学基础：线性代数、统计学、信号处理signal processing（傅里叶变换等）。
+
+  深度学习：掌握CNN、Transformer等模型在影像中的应用（如分割U-Net、分类ResNet）。
+
+  影像处理：学习图像预处理（降噪、配准、增强）、分割、特征提取等。
+
+1. 医学影像格式与工具
+DICOM（医学影像标准格式）
+
+三. 使用工具：
+
+  ITK-SNAP / 3D Slicer（可视化与手动分割）
+
+  MONAI（PyTorch-based 医学影像深度学习框架）
+
+  SimpleITK / nibabel（读取与处理医学图像）
+
+  2. 常用数据集
+  BraTS（脑瘤分割）
+
+  LIDC-IDRI（肺结节检测）
+
+  NIH ChestXray14（胸腔X光图像分类）
+
+  ACDC / M&Ms（心脏MRI分割）
+
+The way we can try to explore: 
+  . 疾病诊断：用AI辅助检测肿瘤、骨折等（如肺癌CT筛查）。
+
+  . 影像分割：自动勾画器官或病变区域（如肝脏分割）。
+
+  . 影像生成：用GAN生成合成影像数据，或MRI到CT的跨模态转换。
+
+  . 多模态融合：结合CT、MRI和临床数据提升诊断准确性。
+
+  . 可解释性：让AI的决策过程对医生更透明（如Grad-CAM可视化）。
+
+
+| 方向                   | 描述                | 所需额外知识          |
+| -------------------- | ----------------- | --------------- |
+| **神经影像**             | MRI/fMRI脑功能分析     | 脑解剖、神经科学、BIDS标准 |
+| **肿瘤影像分析**          | CT/MRI用于肿瘤检测与分割   | 肿瘤学、放射治疗流程      |
+| **AI for Radiology** | 用AI帮助放射科医生诊断      | 医学伦理、模型可解释性     |
+| **跨模态分析**            | 多模态影像联合（如PET+MRI） | 图像配准、融合技术       |
+
+
+####
+
+
 
 
