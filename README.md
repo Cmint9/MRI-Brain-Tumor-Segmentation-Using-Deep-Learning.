@@ -10,10 +10,31 @@
   * Scope of Work：
     * Imported and preprocessed publicly available brain MRI images. 
 
-      Apply spatial domain filters (Gaussian, median and Wiener filters) to denoise the images. 
+      Apply spatial domain filters (Gaussian, median, and Wiener filters) to denoise the images. 
 
-      Implement frequency domain enhancement techniques using FFT and high pass filtering. 
+      Implement frequency domain enhancement techniques using FFT and high-pass filtering. 
 
       Compare and visualize the results of different denoising and enhancement methods. 
 
-      Evaluate performance using metrics such as signal-to-noise ratio (SNR) and visual inspection. 
+      Evaluate performance using metrics such as signal-to-noise ratio (SNR) and visual inspection.
+      
+ * Methodology：
+    * Using MATLAB and the Image Processing Toolbox. 
+
+      Applying Spatial Filters 
+
+      Gaussian filter for soft denoising. 
+
+      Median filter for speckle or pretzel noise. 
+
+      Wiener filter for adaptive filtering. 
+
+      Apply frequency domain filters using FFT: 
+
+      Remove low-frequency background noise. 
+
+      Enhance edges using high-frequency emphasis. 
+
+      Visualize using imshowpair, subgraphs, and more. 
+
+      Optional: Add synthetic noise to compare the robustness of different methods. 
