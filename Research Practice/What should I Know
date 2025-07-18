@@ -1,0 +1,44 @@
+If we want to do the research about Medical imaging, what should we do? 
+
+🧠 一、基础知识框架
+1. 医学影像基础（了解常见模态及其成像原理）
+成像模态：
+
+MRI（磁共振成像）
+
+CT（计算机断层成像）
+
+X-ray（X射线）
+
+Ultrasound（超声）
+
+PET / SPECT（功能成像）
+
+. 医学/解剖学基础（辅助你理解影像的语义）
+  了解基本的 人体解剖结构、疾病类型（如肿瘤、中风、脑退化）
+. 基础医学：了解解剖学、病理学、生理学，尤其是与影像相关的部分（如不同成像模式下的组织表现）。
+. 影像学基础：学习常见医学影像技术（CT、MRI、X-ray、超声、PET等）的原理、应用场景和优缺点。
+. 临床问题：通过文献或临床医生了解当前医学影像领域的未解决问题（如早期癌症检测、影像分割、疾病预后预测等）
+
+  Visible Body（交互式人体解剖学习工具）
+  Radiopaedia.org（医学影像案例库）
+
+
+💻 二、图像处理与机器学习
+1. 图像处理基础
+图像增强、滤波、边缘检测、分割等基本操作
+
+2. 机器学习 / 深度学习（特别是针对图像）
+重点：CNN、UNet、ResNet、3D-CNN、Transformer for Vision
+
+  医学影像常用任务：
+
+  图像分割（Segmentation）
+
+  分类（Classification）
+
+  检测（Detection）
+
+  配准（Registration）
+
+
