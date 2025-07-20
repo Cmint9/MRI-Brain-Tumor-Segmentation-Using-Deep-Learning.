@@ -38,5 +38,16 @@
       Visualize using imshowpair, subgraphs, and more. 
 
       Optional: Add synthetic noise to compare the robustness of different methods.
-   * Expected Outcome  
-     * This project will result in a MATLAB-based system that improves the quality of brain MRI through digital filtering techniques. Among other things, we can visualize comparisons          that will show which DSP method performs best under various noise conditions. Ultimately, the output will support a clearer visualization of brain structures, shedding light on         the preprocessing steps used in the medical imaging pipeline. It can help us to better understand the role of signal processing in medical imaging. 
+* Expected Outcome  
+     * This project will result in a MATLAB-based system that improves the quality of brain MRI through digital filtering techniques. Among other things, we can visualize comparisons          that will show which DSP method performs best under various noise conditions. Ultimately, the output will support a clearer visualization of brain structures, shedding light on         the preprocessing steps used in the medical imaging pipeline. It can help us to better understand the role of signal processing in medical imaging.
+* Timeline 
+
+      Week 3–4（-July 21）: Literature(paper) review, dataset download, and basic MATLAB setup. 
+
+      Week 5（July 21-27): Implement denoising filters and FFT-based methods. 
+
+      Week 6(July 28- August 3): Apply the way and finish the code part.  
+
+      Week 7–8( August4-17): Test, compare results, and finalize report with visualizations.
+
+  ####
