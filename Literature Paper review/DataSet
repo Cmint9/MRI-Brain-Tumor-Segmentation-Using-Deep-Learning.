@@ -1,4 +1,10 @@
+
 # Brain Tumor Dataset from Kaggle: https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset 
+
+Functional MRI (fMRI): Maps brain activity and identifies areas responsible for specific functions, like movement or speech. 
+Diffusion Tensor Imaging (DTI): Reveals the structure and integrity of white matter tracts, aiding in surgical planning. 
+Magnetic Resonance Spectroscopy (MRS): Measures biochemical changes in the brain, helping to identify tumor type and monitor its progression. 
+
 
 
 
