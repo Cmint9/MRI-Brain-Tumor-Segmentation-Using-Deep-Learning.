@@ -51,3 +51,6 @@
       Week 7–8( August4-17): Test, compare results, and finalize report with visualizations.
 
   ####
+
+  <img src="Signal Processing.png" style="width:35%; height:auto;"> 
+  <img src="App Building Onramp.png" style="width:35%; height:auto;"> 
