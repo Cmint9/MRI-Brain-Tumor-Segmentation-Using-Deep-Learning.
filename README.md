@@ -52,5 +52,5 @@
 
   ####
 
-  <img src="Signal Processing2.png" style="width:35%; height:auto;">
+  <img src="Signal Processing .png" style="width:35%; height:auto;">
   <img src="App Building Onramp.png" style="width:35%; height:auto;"> 
