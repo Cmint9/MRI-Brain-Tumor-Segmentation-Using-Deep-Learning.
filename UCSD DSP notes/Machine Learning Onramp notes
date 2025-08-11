@@ -1,0 +1,13 @@
+Here is notes part when I am learning, Machine Learning Onramp: 
+
+# 1 Look at the scatter plot and find the color representing the letters r and s. You may want to uncheck Show for all the other letters.
+assignment: Select lastXpos as the X predictor and lastYpos as the Y predictor in the scatter plot.
+在预测变量中调试
+
+# 2 You can evaluate the performance of the trained model by looking at the accuracy. Ideally, you want that number to get close to 100%. Typically, you'll need to try different models and adjust things to improve accuracy.
+点训练全部，就可以训练一整个model了。 中间可能会出现验证混淆矩阵
+To train and evaluate other classification models, select them from the Models section in the toolstrip. Clicking Train All again only trains draft models. Models that have been previously trained are not retrained. 
+If you want to train specific models, you can click Train Selected instead.
+Assignment:  
+
+
