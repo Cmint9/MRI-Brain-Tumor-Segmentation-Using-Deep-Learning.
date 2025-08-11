@@ -4,7 +4,8 @@ Here is notes part when I am learning, Machine Learning Onramp:
 Assignment: Select lastXpos as the X predictor and lastYpos as the Y predictor in the scatter plot.
 在预测变量中调试
 
-<img src="Images/pic.png" alt="Handwritting" width="400">
+![描述文字](images/Handwritting.png)
+
 
 # 2 You can evaluate the performance of the trained model by looking at the accuracy. Ideally, you want that number to get close to 100%. Typically, you'll need to try different models and adjust things to improve accuracy.
 点训练全部，就可以训练一整个model了。 中间可能会出现验证混淆矩阵
