@@ -1,5 +1,5 @@
 # Biomedical-imaging-extension
-<img src="MRI.png" style="width:35%; height:auto;">    <img src="Signal Processing.png" style="width:35%; height:auto;">
+<img src="Images/MRI.png" style="width:35%; height:auto;">    <img src="Images/Signal Processing.png" style="width:35%; height:auto;">
 
 ## Denoising and Enhancement of Brain MRI Images Using DSP Filtering Techniques. 
   * Objective：
@@ -52,5 +52,6 @@
 
   ####
 
-  <img src="Signal Processing .png" style="width:35%; height:auto;">
-  <img src="App Building Onramp.png" style="width:35%; height:auto;"> 
+  <img src="Images/Signal Processing .png" style="width:35%; height:auto;">
+  <img src="Images/App Building Onramp.png" style="width:35%; height:auto;"> 
+  <img src="Images/Machine Learning Onramp.png" style="width:35%; height:auto;"> 
