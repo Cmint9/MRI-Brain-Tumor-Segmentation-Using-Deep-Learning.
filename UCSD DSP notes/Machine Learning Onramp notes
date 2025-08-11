@@ -27,6 +27,13 @@ you can use the axis function to set the x and y axis limits.
 axis([xmin xmax ymin ymax])
 axis([-1 1 -1 1])
 
+# assignment6: You can use * as a wildcard, or placeholder, to make a datastore to files or folders matching a particular pattern. For example, "user*.xlsx" will look for any XLSX files starting with the word "user."
+ds = datastore("user*.xlsx");
+The handwriting data files have names of the form user003_r_2.txt, that is, XXX_r_XXX.txt, so you need to use two wildcards for these files.
+
+letterds =datastore(*_r_*.xlsx");
+# read file data = read(letterds)
+
 
 
 
