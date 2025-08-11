@@ -13,4 +13,20 @@ To train and evaluate other classification models, select them from the Models s
 If you want to train specific models, you can click Train Selected instead.
 Assignment:  
 
+#3 Assignment: You can use the readtable function to import tabular data from a spreadsheet or text file and store the result as a table.
+mytable = readtable("myfile.xlsx");
+This code imports the data from the spreadsheet myfile.xlsx and stores it in a table named mytable.
+letter = readtable('w.txt');
+
+#4 assignement: To visualize the letter, you can plot the x and y letter coordinates. You can use dot notation to refer to any individual variable within a table.
+plot(mytable.Xdata,mytable.Ydata)
+plot(letter.X, letter.Y)
+
+#assignment5: The default axis limits adjust to the height and width of each letter. To be able to see how different letters were written in the same space,
+you can use the axis function to set the x and y axis limits.
+axis([xmin xmax ymin ymax])
+axis([-1 1 -1 1])
+
+
+
 
