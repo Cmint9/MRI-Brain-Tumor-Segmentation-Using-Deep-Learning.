@@ -7,9 +7,11 @@ Assignment: Select lastXpos as the X predictor and lastYpos as the Y predictor i
 ![描述文字](images/Handwritting.png)
 
 
-# 2 You can evaluate the performance of the trained model by looking at the accuracy. Ideally, you want that number to get close to 100%. Typically, you'll need to try different models and adjust things to improve accuracy.
+# 2 You can evaluate the performance of the trained model by looking at the accuracy. Ideally, you want that number to get close to 100%. Typically, 
+you'll need to try different models and adjust things to improve accuracy.
 点训练全部，就可以训练一整个model了。 中间可能会出现验证混淆矩阵
-To train and evaluate other classification models, select them from the Models section in the toolstrip. Clicking Train All again only trains draft models. Models that have been previously trained are not retrained. 
+To train and evaluate other classification models, select them from the Models section in the toolstrip. Clicking Train All again only trains draft models. 
+Models that have been previously trained are not retrained. 
 If you want to train specific models, you can click Train Selected instead.
 Assignment:  
 
@@ -27,7 +29,8 @@ you can use the axis function to set the x and y axis limits.
 axis([xmin xmax ymin ymax])
 axis([-1 1 -1 1])
 
-# assignment6: You can use * as a wildcard, or placeholder, to make a datastore to files or folders matching a particular pattern. For example, "user*.xlsx" will look for any XLSX files starting with the word "user."
+# assignment6: You can use * as a wildcard, or placeholder, to make a datastore to files or folders matching a particular pattern. 
+For example, "user*.xlsx" will look for any XLSX files starting with the word "user."
 ds = datastore("user*.xlsx");
 The handwriting data files have names of the form user003_r_2.txt, that is, XXX_r_XXX.txt, so you need to use two wildcards for these files.
 
@@ -35,5 +38,60 @@ letterds =datastore(*_r_*.xlsx");
 # read file data = read(letterds)
 
 
+# assignment 7: A feature is simply a value calculated from the signal, such as the time it takes to write a letter.
+任务
+Find the time taken to write the letter by extracting the last value of letter.Time and storing the result in a variable called timeToWrite.
 
+timeToWrite = letter.Time(end)
 
+## assignment 8: Typically, the letter w is wide and short, while the letter r is thin and short, and the letter t is thin and tall. 
+You can use the height and width of a letter as predictors for a machine learning model.
+The range function returns the range of values in an array. That is, range(x) is equivalent to max(x) - min(x).
+任务Calculate the height of the letter by using the range function. Assign the result to a variable named letterHeight. 
+Similarly, calculate the width of the letter, and assign the result to a variable named letterWidth.
+
+letterHeight = range(letter.Y)
+letterwidth =  range(letter.X)
+
+# create a teable features = table(letterHeight, letterwidth)
+
+Part 6: Create a Function to Extract Features
+Now you need to extract the features from every single file in your dataset. Instead of repeatedly typing each function to extract each feature, 
+you can wrap the code to extract features into a function 
+to make it easier for you to repeat the same analysis on multiple data files. In this activity, 
+you create a function that extracts all the features of a letter and combines them into a table.
+
+## assignment9: Create a function named extractLetterFeatures that takes letter as the input, and returns features as the output.
+function features = extractLetterFeatures(letter)
+
+% Extract features
+timeToWrite = letter.Time(end);
+letterHeight = range(letter.Y);
+letterWidth = range(letter.X);
+firstXpos = letter.X(1);
+lastXpos = letter.X(end-1);
+firstYpos = letter.Y(1);
+lastYpos = letter.Y(end-1);
+numStrokes = sum(ismissing(letter.P));
+
+% Combine features into a table
+features = table(timeToWrite,letterHeight,letterWidth, ...
+    firstXpos,lastXpos,firstYpos,lastYpos,numStrokes);
+
+end
+
+### How Classification Methods Work
+A classification model divides the feature space into regions labeled with output categories.
+Classification models use training data to determine feature space divisions.
+The k-nearest neighbors method labels points based on the majority class of the nearest training points.
+There are various machine learning methods, and often the best approach is to experiment with different ones.
+
+## For confusion Matrix
+How Classification Methods Work
+A classification model divides the feature space into regions labeled with output categories.
+Classification models use training data to determine feature space divisions.
+The k-nearest neighbors method labels points based on the majority class of the nearest training points.
+There are various machine learning methods, and often the best approach is to experiment with different ones.
+
+Low accuracy may be an indication that your features do not provide enough information to distinguish the different classes. 
+In particular, you might want to look at the data for classes that are frequently confused, to see if there are characteristics that you can capture as new features.
