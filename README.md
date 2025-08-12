@@ -54,4 +54,4 @@
 
   <img src="Images/Signal Processing Onramp.png" style="width:30%; height:auto;">
   <img src="Images/App Building Onramp.png" style="width:30%; height:auto;">
-  <img src="Images/Machine Learnin Onramp.png" style="width:30%; height:auto;">
+  <img src="Images/Machine Learning Onramp.png" style="width:30%; height:auto;">
