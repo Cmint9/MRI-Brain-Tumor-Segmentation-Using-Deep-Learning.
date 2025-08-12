@@ -3,20 +3,22 @@
 
 ## Denoising and Enhancement of Brain MRI Images Using DSP Filtering Techniques. 
   * Objective：
-    * The aim of this project is to improve the visual quality of MRI images of the brain by removing noise and enhancing structural detail using Digital Signal Processing （DSP） methods in MATLAB. The aim is to visualize anatomical features more clearly, which may help in diagnostic imaging.
+    * The objective of this project is to improve the visual quality of brain MRI images by simulating different noise conditions, removing noise, and enhancing structural details using Digital Signal Processing (DSP) techniques in MATLAB. The aim is to enable clearer visualization of anatomical features, supporting improved diagnostic imaging
   * Background and Motivation: 
     * Magnetic resonance imaging (MRI) is an important tool for the diagnosis of neurological disorders. However, MRI images are often affected by Gaussian noise, motion artifacts, or acquisition-related distortions that may blur important anatomical structures. Therefore, we can reduce the noise by applying DSP-based filtering and enhancement techniques so that we can preserve critical details while ultimately improving the clarity and interpretability of the images for further analysis or segmentation.
     *  磁共振成像（MRI）是诊断神经系统疾病的重要工具。然而，核磁共振成像图像经常受到高斯噪声、运动伪影或采集相关失真的影响，可能会模糊重要的解剖结构。因此，我们可以通过应用基于 DSP 的滤波和增强技术来减少噪声，从而保留关键细节，最终提高图像的清晰度和可解释性，以便进一步分析或分割。
   * Scope of Work：
-    * Imported and preprocessed publicly available brain MRI images. 
+    * Import and preprocess publicly available brain MRI images.
 
-      Apply spatial domain filters (Gaussian, median, and Wiener filters) to denoise the images. 
+      Simulate Gaussian and salt-and-pepper noise at varying intensities to evaluate the robustness of filters.
 
-      Implement frequency domain enhancement techniques using FFT and high-pass filtering. 
+      Apply spatial domain filters (Gaussian, median, and Wiener) to denoise the images.
 
-      Compare and visualize the results of different denoising and enhancement methods. 
+      Implement frequency domain enhancement techniques using FFT and high-pass filtering.
 
-      Evaluate performance using metrics such as signal-to-noise ratio (SNR) and visual inspection.
+      Compare and visualize the results of different denoising and enhancement methods.
+
+      Evaluate performance using quantitative metrics (SNR, PSNR) and qualitative visual inspection.
       
  * Methodology：
     * Using MATLAB and the Image Processing Toolbox. 
