@@ -10,7 +10,11 @@
 * A Review of Medical Image Denoising Methods:  医学图像去噪方法综述
   * medical image denoising review， MRI denoising survey， digital filtering MRI
   * Goal； 找到空间域（Median， Gaussian） 和频域（FFT，high-pass， low-pass） 的方法对比
-  
+  1. S. Kaur, J. Singla, Nikita and A. Singh, "Review on Medical Image Denoising Techniques," 2021 International Conference on Innovative Practices in Technology and Management (ICIPTM), Noida, India, 2021, pp. 61-66, doi: 10.1109/ICIPTM52218.2021.9388367. keywords: {Image edge detection;Computed tomography;Noise reduction;Positron emission tomography;Medical diagnostic imaging;Diseases;Image denoising;imaging;noise;preprocessing}
+  2. Yoon, M. A., Gold, G. E., & Chaudhari, A. S. (2023). Accelerated Musculoskeletal Magnetic Resonance Imaging. Journal of Magnetic Resonance Imaging. https://doi.org/10.1002/jmri.29205
+  3. More, S., & Hanchate, V. (2008). A Survey on Magnetic Resonance Image Denoising Methods. International Research Journal of Engineering and Technology, 9001. https://www.irjet.net/archives/V3/i5/IRJET-V3I554.pdf
+
+
 * Fundamentals of Digital Image Processing: Filter Principles: 数字图像处理基础滤波器原理
   * Gaussian filter image processing， Median filter ，Wiener filter MATLAB
   * Goal： 找到原理和数学公式
