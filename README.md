@@ -1,6 +1,6 @@
 # Biomedical-Imaging-Extension
 <img src="Images/MRI.png" style="width:35%; height:auto;">    <img src="Images/Signal Processing.png" style="width:35%; height:auto;">
-<img src="Images/Graphics Processing .png" style="width:25%; height:auto;">
+<img src="Images/Graphics Processing .png" style="width:25%; height:55%;">
 ## Denoising and Enhancement of Brain MRI Images Using DSP Filtering Techniques. 
   * Objective：
     * The objective of this project is to improve the visual quality of brain MRI images by simulating different noise conditions, removing noise, and enhancing structural details using Digital Signal Processing (DSP) techniques in MATLAB. The aim is to enable clearer visualization of anatomical features, supporting improved diagnostic imaging
