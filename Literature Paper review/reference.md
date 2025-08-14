@@ -8,17 +8,21 @@
 5. Kaur, P., Singh, G., & Kaur, P. (2018). A Review of Denoising Medical Images Using Machine Learning  Approaches. Current medical imaging reviews, 14(5), 675–685. https://doi.org/10.2174/1573405613666170428154156
 
 * A Review of Medical Image Denoising Methods:  医学图像去噪方法综述
- * medical image denoising review， MRI denoising survey， digital filtering MRI
+  * medical image denoising review， MRI denoising survey， digital filtering MRI
+  * Goal； 找到空间域（Median， Gaussian） 和频域（FFT，high-pass， low-pass） 的方法对比
   
 * Fundamentals of Digital Image Processing: Filter Principles: 数字图像处理基础滤波器原理
-  * Gaussian filter image processing， Median filter ，Wiener filter MATLAB 
+  * Gaussian filter image processing， Median filter ，Wiener filter MATLAB
+  * Goal： 找到原理和数学公式
 
   
 * Frequency domain enhancement and filtering:频域增强与滤波
   * frequency domain filtering MRI， FFT image enhancement
+  * Goal： 尝试去理解频谱分析如何帮助识别并增强边缘
 
   
 * Image quality evaluation indicators: 图像质量评估指标
-  * PSNR image quality，SSIM structural similarity 
+  * PSNR image quality，SSIM structural similarity
+  * 需要知道如何用定量指标评估去噪效果
     
   
