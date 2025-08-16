@@ -60,10 +60,15 @@ Add an input to the command from task 1. Use the network name "googlenet" to imp
 [if we want to use deep learning on MATLAB, we need to open Deep Network Designer]
 
 # What is CNN(convultion neural netwrok)? 
-CNN is made of layers, information is passed between those layers. Also, CNNs are specialized neral netwroks designed for inputs with a 
+CNN is made of layers, information is passed between those layers. Also, CNNs are specialized neural networks designed for inputs with a 
 two-dimensional structure, such as images. 
+# Pretrained model 
+The bulk of the network turns into the input image. The type/order chosen by the architect.
+If we use deep learning to load a bunch of images, we need to use a datastore. CNNs in MATLAB can make predictions on entire collections of images using datastores. 
+A datastore is a MATLAB variable that acts as a reference to a data source, 
+such as a folder of image files.
 
-The bulk of the network turns into the input image. The type/order chosen by the architect 
+A network can make prediction on a whole collection of images by providing a datastore. ( we do not have to import data manually) 
 
 
 
