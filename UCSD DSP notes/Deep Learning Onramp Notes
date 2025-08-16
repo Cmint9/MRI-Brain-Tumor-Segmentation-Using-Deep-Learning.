@@ -41,4 +41,29 @@ label = scores2label(scores,classNames)
 任务Save the class name with the highest prediction score to a variable named c.
 c = scores2label(s,classes)
 
+# Assignment 7 Using the functions you learned earlier in the previous tasks, add commands to the script so that it makes predictions of the content of the images in img2 and img3. 
+Store the classes with the highest prediction score in variables called c2 and c3, respectively.
+To see the class names, omit the semicolon.
+s2 = minibatchpredict(net, img2)
+c2= scores2label(s2,classes)
+
+s3 = minibatchpredict(net, img3)
+c3 = scores2label(s3,classes)
+
+# Assignment 8: Some of the network's top predictions are incorrect. For example, the second image contains a cat, yet the network classifies it as the dog breed toy terrier.
+Different pretrained networks can have different behavior, so you can try importing another network by specifying a network name to imagePretrainedNetwork. 
+[n,c] = imagePretrainedNetwork("name")
+任务
+Add an input to the command from task 1. Use the network name "googlenet" to import GoogLeNet.
+[net, classes] = imagePretrainedNetwork('googlenet')
+
+[if we want to use deep learning on MATLAB, we need to open Deep Network Designer]
+
+# What is CNN(convultion neural netwrok)? 
+CNN is made of layers, information is passed between those layers. Also, CNNs are specialized neral netwroks designed for inputs with a 
+two-dimensional structure, such as images. 
+
+The bulk of the network turns into the input image. The type/order chosen by the architect 
+
+
 
