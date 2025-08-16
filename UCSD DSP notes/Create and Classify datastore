@@ -43,6 +43,34 @@ The names of the classes are already in the workspace in the variable classes. S
 preds = scores2label(scores, classes)
 
 
+### Manage collection of images
+Adjust input image:
+This code imports and displays the image from the file file01.jpg.
+img = imread("file01.jpg");
+imshow(img)
+
+[net,classes] = imagePretrainedNetwork("googlenet");
+
+# Assignment1: Use the size function to view the size of the image img. Save the result to a variable called sz.
+sz = size(img)
+
+# Assignment2: The input layer of a network specifies the image size that the network requires. To see the input size, you can display a summary of your network.
+summary(net)
+任务
+Display a summary of the network net in the script.
+
+summary(net) 
+
+# Assignment3: You can use the imresize function to resize an image to match the expected input size.
+
+This command resizes img to M-by-N. That is, the output has a height of M pixels and a width of N pixels.
+imgresz = imresize(img,[M N]);
+任务
+Use the imresize function to resize the image stored in the img variable to 224-by-224. Store the result back in the img variable. Then, display the resized image with imshow.
+ img = imresize(img,[244 244]);
+ imshow(img)
+
+
 
 
 
