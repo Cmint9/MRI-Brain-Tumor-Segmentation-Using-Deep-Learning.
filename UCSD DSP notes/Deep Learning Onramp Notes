@@ -1,0 +1,44 @@
+# Assignment You can use the imread function to import images stored in most standard file formats, such as GIF, JPEG, and PNG.
+
+This command reads the specified image and stores it in a MATLAB variable called I.
+I = imread("filename.png");
+任务
+Import the JPG file file01 into the MATLAB workspace. Store the image in a variable called img1.
+
+img1 = imread('file01.jpg')
+
+# Assignment2 You can use the imshow function to display an image that is stored in a MATLAB variable:
+imshow(I)
+任务
+Display the imported image in the img1 variable.
+
+imshow(img1)
+
+# Assignment3 You can create a copy of a pretrained deep network using the imagePretrainedNetwork function.
+net = imagePretrainedNetwork
+By default, the function provides a deep network named “SqueezeNet.” This network was trained on a data set called ImageNet, which contains 1000 classes, or categories.
+任务
+Use the imagePretrainedNetwork function to load a pretrained network. Save the result as a variable called net.
+
+net = imagePretrainedNetwork
+
+# Assignment4 You can use the minibatchpredict function to predict the subject of an image. The result is a vector of prediction scores, one for each class that the network net can predict.
+scores = minibatchpredict(net,img)
+The term "mini-batch" is in the function name because this function can also predict the contents of multiple images. You'll learn more about this term later in the course.
+任务Use the minibatchpredict function with the pretrained network net to predict the subject of the image stored in the img1 variable. 
+Store the network's prediction in a variable called s.
+To see the result, don't use a semicolon at the end of the command.
+s = minibatchpredict(net,img1)
+
+#Assignment5 To get the list of potential classes, add a second output argument from imagePretrainedNetwork.
+[net,classNames] = imagePretrainedNetwork
+任务Add a second output to the code from task one to get the names of classes. Name the variable classes.
+To see the list of names, don't use a semicolon at the end of the command.
+[net,classes] = imagePretrainedNetwork
+
+# Assignment6 You can consider the class name with the highest score as the network's label for the image. You can get this label with the scores2label function.
+label = scores2label(scores,classNames)
+任务Save the class name with the highest prediction score to a variable named c.
+c = scores2label(s,classes)
+
+
