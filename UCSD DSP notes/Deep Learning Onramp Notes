@@ -77,7 +77,8 @@ For large data sets, saving a duplicate of your files can take up a lot of space
 which takes an image datastore and an image size as inputs. 
 You can use the datastore as input to the minibatchpredict function.
 
-## Assignnent1: An augmented image datastore can perform simple preprocessing steps on an entire collection of images. To create this datastore, use the augmentedImageDatastore function. The following code will resize all images in the specified image datastore to have M rows and N columns:
+## Assignnent1: An augmented image datastore can perform simple preprocessing steps on an entire collection of images. To create this datastore, use the augmentedImageDatastore function.
+The following code will resize all images in the specified image datastore to have M rows and N columns:
 auds = augmentedImageDatastore([M N],imds)
 任务
 Create an augmented image datastore from imds that resizes the images to 224-by-224. Name the new datastore auds.
@@ -89,6 +90,18 @@ Before each image is classified, the datastore processes it using the methods th
 Classify the images in auds using the minibatchpredict and scores2label functions with the network stored in net. Store the classes in a variable called preds.
 scores = minibatchpredict(net, auds)
 preds = scores2label(scores,classes)
+
+n machine learning terminology, this is known as supervised learning. The network will learn from examples with a known correct answer.
+
+Second, you'll need a network to train. The point of transfer learning is that you'll get that network by starting with a pretrained network and then modifying it.
+
+Third, you need to specify a loss function. Training involves applying an algorithm that iteratively improves the network's ability to correctly identify the training images. 
+The loss function evaluates the network by measuring the error between the correct label from your training data and the predicted value from the network. For standard tasks, you can select from built-in loss functions, like cross-entropy loss for classification.
+Last, you'll need to specify a set of training options. The training algorithm can be fine-tuned with many parameters, such as how many training images to use at each step, the maximum number of iterations to take, the learning rate,
+or how aggressively new iterations should change the network parameters, and so on. So MATLAB needs you to specify a set of these training options when you train a network. But don't worry, you can often just use the default values for most parameters.
+
+Once you have these four components-- the training data, the network, the loss function, and the options for the training algorithm-- training is pretty easy. Pass the four pieces to the trainnet function and wait for the trained network to be returned as output. 
+In the next activities, you'll create the components needed to perform transfer learning for the flower images.
 
 
 
