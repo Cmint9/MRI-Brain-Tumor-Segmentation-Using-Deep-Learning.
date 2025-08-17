@@ -1,0 +1,23 @@
+## Set training set 
+# Assignment1: What options can you set to control network training? You can see the available options for a chosen training algorithm by using the trainingOptions function.
+
+This command creates a variable called opts that contains the default options for the specified training algorithm.
+opts = trainingOptions("algorithm")
+
+To use stochastic gradient descent with momentum (SGDM), specify "sgdm".
+任务
+Create a variable called opts with the default training algorithm options for the SGDM optimizer. Omit the semicolon at the end of the line to display the result.
+opts = trainingOptions("sgdm")
+
+## Assignment 2: You can specify any number of settings as optional name-value arguments in the trainingOptions function.
+opts = trainingOptions("sgdm",Name=value)
+任务
+Update the variable called opts to set InitialLearnRate to 0.001.
+opts = trainingOptions("sgdm",InitialLearnRate=0.001)
+
+## Assignment3: By default, you'll monitor the loss value during training to see how the network is learning. You can add additional metrics with the Metrics name-value argument. For classification problems, it's common to monitor both loss and accuracy.
+opts = trainingOptions(...,Metrics="accuracy")
+任务
+Update the variable called opts to set Metrics to "accuracy".
+opts = trainingOptions("sgdm",InitialLearnRate=0.001,Metrics="accuracy")
+
