@@ -21,3 +21,28 @@ opts = trainingOptions(...,Metrics="accuracy")
 Update the variable called opts to set Metrics to "accuracy".
 opts = trainingOptions("sgdm",InitialLearnRate=0.001,Metrics="accuracy")
 
+# Evaluate the test performance: 
+To see how your network performs on the test images, you can use the testnet function. You can calculate a variety of metrics, like accuracy.
+m = testnet(net,data,"accuracy")
+The second input data can be a datastore.
+任务
+Calculate the testing accuracy of the trained network flowernet on the testing datastore resizeTestImgs. Store the result in a variable called a.
+a = testnet(flowernet,resizeTestImgs,"accuracy")
+
+# Assignment2: To investigate the misclassifications, you can get the correct labels from the test images. The known classifications are stored in the Labels property of the datastore.
+knownClass = imds.Labels
+任务
+Store the known classifications of the test images in a variable called flwrActual by extracting the Labels property of the testImgs datastore.
+flwrActual = testImgs.Labels
+
+# Assignment3: The confusionchart function calculates and displays the confusion matrix for the predicted classifications.
+confusionchart(knownclass,predictedclass)
+The (j,k) element of the confusion matrix is a count of how many images from class j the network predicts to be in class k. 
+Diagonal elements represent correct classifications and off-diagonal elements represent misclassifications.
+任务
+Display the confusion matrix for the flower test data. The known classifications are stored in your solution for Task 2 (flwrActual). 
+The predicted classifications are stored in the flwrPreds categorical array.
+
+confusionchart(flwrActual,flwrPreds)
+
+
