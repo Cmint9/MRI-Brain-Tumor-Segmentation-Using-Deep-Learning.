@@ -70,6 +70,14 @@ Use the imresize function to resize the image stored in the img variable to 224-
  img = imresize(img,[244 244]);
  imshow(img)
 
+## assignment4: To customize the pretrained network architecture to classify flowers, you need to adjust the number of output classes to match the number of categories in the data set. You can still choose any available pretrained network by name, then set the NumClasses name-value argument. net = imagePretrainedNetwork("name", ...
+    NumClasses=n)
+任务
+Load the pretrained network GoogLeNet ("googlenet") and set NumClasses to 5 to match the number of flowers in the data set. Name the network variable net.
+net = imagePretrainedNetwork("googlenet", ...
+    NumClasses=5)
+
+
 
 
 
