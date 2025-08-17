@@ -70,5 +70,27 @@ such as a folder of image files.
 
 A network can make prediction on a whole collection of images by providing a datastore. ( we do not have to import data manually) 
 
+Preprocessing each image individually can be time consuming. To use an image datastore, you also need to save the processed images to a folder. 
+For large data sets, saving a duplicate of your files can take up a lot of space.
+Preprocessing each image individually can be time consuming. To use an image datastore, you also need to save the processed images to a folder. 
+For large data sets, saving a duplicate of your files can take up a lot of space.You can perform basic preprocessing with the augmentedImageDatastore function, 
+which takes an image datastore and an image size as inputs. 
+You can use the datastore as input to the minibatchpredict function.
+
+## Assignnent1: An augmented image datastore can perform simple preprocessing steps on an entire collection of images. To create this datastore, use the augmentedImageDatastore function. The following code will resize all images in the specified image datastore to have M rows and N columns:
+auds = augmentedImageDatastore([M N],imds)
+任务
+Create an augmented image datastore from imds that resizes the images to 224-by-224. Name the new datastore auds.
+auds = augmentedImageDatastore([224 224],imds)
+
+# Assignment2: You can use the augmented image datastore as an input to the minibatchpredict function. 
+Before each image is classified, the datastore processes it using the methods that you specified when you created the datastore.
+任务
+Classify the images in auds using the minibatchpredict and scores2label functions with the network stored in net. Store the classes in a variable called preds.
+scores = minibatchpredict(net, auds)
+preds = scores2label(scores,classes)
+
+
+
 
 
