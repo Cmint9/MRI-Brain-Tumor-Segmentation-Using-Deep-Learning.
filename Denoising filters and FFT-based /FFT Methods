@@ -1,3 +1,22 @@
-FFT Methods: 
-DFT: Discrete Fourier Theorem(离散傅立叶） 
+# Lecture 4: Frequency Analysis
+
+Discrete Fourier Transform: 离散傅里叶变换：
+
+The discrete Fourier transform provides a way to represent discrete-time signals or linear time-invariant systems in the frequency domain.
+It serves as a valuable tool for analyzing discrete-time system. 
+DFT is utilized in the spectral analysis of signals. 
+
+
+
+FFT Methods: Fast Fourier Transform 
+The computation of an N-point DFT requires O(N^2) operations, which increases rapidly with N. The 
+Cooley-Tukey algorithm is a fast algorithm.
+
+There are two visions: 
+Decimation-in-time 时间内消灭
+Decimation-in-frequency 频率衰减法
+
+Decimation-in-time FFT： 
+In computing the N-point DFT via FFT, we can assume that N is a power of 2. If N is not a power of 2, then we pad the sequence with zeros to make N a power of 2. 
+ 
 How will we use the DFT and FFT? 
