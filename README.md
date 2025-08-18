@@ -55,10 +55,10 @@
 
   ####
 
-  <img src="Images/Signal Processing Onramp.png" style="width:50%; height:auto;">
-  <img src="Images/App Building Onramp.png" style="width:50%; height:auto;">
-  <img src="Images/Machine Learning Onramp.png" style="width:50%; height:auto;">
-  <img src="Images/DeepLearning Onramp.png" style="width:50%; height:auto;">
+  <img src="Images/Signal Processing Onramp.png" style="width:45%; height:auto;">
+  <img src="Images/App Building Onramp.png" style="width:45%; height:auto;">
+  <img src="Images/Machine Learning Onramp.png" style="width:45%; height:auto;">
+  <img src="Images/DeepLearning Onramp.png" style="width:45%; height:auto;">
 
   ### Citation:
   * https://www.researchgate.net/profile/Pierrick-Coupe/publication/337208936/figure/fig4/AS:824616847167489@1573615385441/Denoising-example-of-real-T1-and-T2-images-From-left-to-right-Noisy-image-filtered.jpg
