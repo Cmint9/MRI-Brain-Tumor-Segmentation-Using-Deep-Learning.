@@ -1,12 +1,7 @@
 
-
----
-
 ## 🧠 一、医学影像（Medical Imaging）的主要分支
 
-可以按**成像模态（Modality）**和**应用目的（Application）**两个维度来划分。
-
----
+可以按**成像模态(Modality)**和**应用目的(Application)**两个维度来划分.
 
 ### I. 成像模态（Modality）——即“影像类型”
 
@@ -48,9 +43,7 @@
 
 ---
 
-## 🎯 三、结合你的定位推荐路线
-
-你目前的方向是：
+## 🎯 目前的方向是：
 
 > “Medical Imaging + AI算法（特别是Radiology、MRI、信号处理背景）”
 
@@ -67,18 +60,3 @@
 > “Signal Processing and Vision Models for Medical Imaging Applications”
 
 ---
-
-## 💬 四、总结一句话的方向框架
-
-> “我聚焦于利用AI算法改进MRI/CT影像的重建与分析，以支持放射学和神经影像方向的疾病预测与临床决策。”
-
-这句话可以直接放进SOP或Research Interest描述中，也能帮助你在选导师时判断：
-📌 他是做“影像信号 → 图像重建”的？（更算法）
-📌 还是“影像 → 疾病预测”的？（更临床应用）
-
----
-
-要不要我帮你画一个**医学影像分支图谱（Medical Imaging Map）**，
-把“成像模态 + 应用领域 + 技术层级”三者直观地可视化出来？
-你看着图就能立刻判断哪种导师最适合你。
-
