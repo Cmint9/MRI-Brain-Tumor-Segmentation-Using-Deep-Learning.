@@ -1,1 +1,84 @@
-d
+
+
+---
+
+## 🧠 一、医学影像（Medical Imaging）的主要分支
+
+可以按**成像模态（Modality）**和**应用目的（Application）**两个维度来划分。
+
+---
+
+### I. 成像模态（Modality）——即“影像类型”
+
+| 模态                             | 全称                           | 主要用途                           | 常见AI任务                    | 是否适合你                |
+| ------------------------------ | ---------------------------- | ------------------------------ | ------------------------- | -------------------- |
+| **MRI**                        | Magnetic Resonance Imaging   | 脑、脊髓、肌肉、软组织结构成像；特别适合神经科学研究     | 图像重建、分割、功能连接分析（fMRI）、异常检测 | ✅ 极度适合（信号处理、算法、神经影像） |
+| **CT**                         | Computed Tomography          | 骨骼、肺部、肿瘤检测；放射科核心影像             | 3D分割、病灶检测、剂量优化、重建加速       | ✅ 适合（算法和结构影像）        |
+| **PET**                        | Positron Emission Tomography | 功能成像，常与CT/MRI配合，测代谢活性（如癌症或脑代谢） | 多模态融合（PET-CT/MRI）、异常活性检测  | ⚪ 半适合（需生物信息背景）       |
+| **Ultrasound**                 | 超声                           | 实时成像、便携、低成本（产科、心脏、肾脏）          | 去噪、分割、弹性特征提取、深度估计         | ⚪ 可选（需信号处理经验）        |
+| **X-ray**                      | Radiography                  | 常规放射检查（胸片、骨折）                  | 病灶检测、分类、自动报告生成            | ✅ 入门好、应用广            |
+| **Optical / Microscopy**       | 显微成像、生物光学                    | 分子／细胞层级研究                      | 图像增强、细胞检测、3D重建            | ⚪ 偏生物侧               |
+| **Pathology / Histopathology** | 组织病理学影像（H&E切片）               | 癌症诊断、肿瘤分级                      | 病理切片分割、生成对抗网络             | ⚪ 偏AI视觉+生物侧          |
+
+---
+
+### II. 应用目的（Application Area）——即“研究/临床任务”
+
+| 方向                                               | 描述                         | 常见AI任务           | 是否适合你                 |
+| ------------------------------------------------ | -------------------------- | ---------------- | --------------------- |
+| **Neuroimaging（神经影像）**                           | 脑部MRI、fMRI、DTI，研究脑功能与结构变化  | 脑分割、连接性分析、疾病预测   | ✅✅ 非常匹配               |
+| **Oncological Imaging（肿瘤影像）**                    | 肿瘤检测、分级、治疗响应预测（CT/MRI/PET） | 病灶检测、特征提取、预测模型   | ✅ 强                   |
+| **Radiomics / Quantitative Imaging（影像组学）**       | 从医学影像中提取统计特征，用于疾病预测        | 特征工程、ML模型、可解释性AI | ✅ 和Hersh Sagreiya方向一致 |
+| **Image Reconstruction（重建）**                     | 从原始信号恢复高质量影像（MRI, CT）      | 信号建模、压缩感知、深度重建网络 | ✅ 和DSP背景完美匹配          |
+| **Multimodal Fusion（多模态融合）**                     | MRI+CT+基因组+临床数据整合分析        | 数据对齐、嵌入学习        | ✅ 高阶方向                |
+| **Clinical Decision Support（临床辅助）**              | 将AI模型嵌入医生工作流               | 报告生成、可解释AI       | ⚪ 偏应用端                |
+| **Medical Robotics / Image-guided Intervention** | 基于影像引导的手术导航、机器人定位          | 3D重建、目标追踪        | ⚪ 偏工程侧                |
+
+---
+
+## 🧩 二、按技术层面划分（AI视角）
+
+医学影像研究从“底层信号处理 → 视觉模型 → 临床决策”形成一个连续谱：
+
+| 层级                          | 示例任务            | 对应学科背景                 | 代表领域                       |
+| --------------------------- | --------------- | ---------------------- | -------------------------- |
+| **底层：信号层 (Signal-level)**   | MRI重建、CT降噪、运动校正 | ECE, DSP, Applied Math | Nathan Jacobs、MRI physics  |
+| **中层：图像层 (Feature-level)**  | 分割、检测、配准、生成模型   | CS, Vision, ML         | Radiology AI, segmentation |
+| **高层：临床层 (Clinical-level)** | 诊断预测、病理关联、个性化治疗 | Biomedical Informatics | Hersh Sagreiya, Radiomics  |
+
+---
+
+## 🎯 三、结合你的定位推荐路线
+
+你目前的方向是：
+
+> “Medical Imaging + AI算法（特别是Radiology、MRI、信号处理背景）”
+
+➡️ 对应最适合的子领域组合：
+
+* **MRI / CT (Modalities)**
+* **Neuroimaging 或 Radiomics (Application)**
+* **Signal-to-Image Level 的算法研究（如图像重建、噪声抑制、分割）**
+
+📍**推荐研究方向关键词组合：**
+
+> “Deep Learning for MRI Reconstruction and Radiomics-based Disease Prediction”
+> “AI Algorithms for Radiology and Neuroimaging”
+> “Signal Processing and Vision Models for Medical Imaging Applications”
+
+---
+
+## 💬 四、总结一句话的方向框架
+
+> “我聚焦于利用AI算法改进MRI/CT影像的重建与分析，以支持放射学和神经影像方向的疾病预测与临床决策。”
+
+这句话可以直接放进SOP或Research Interest描述中，也能帮助你在选导师时判断：
+📌 他是做“影像信号 → 图像重建”的？（更算法）
+📌 还是“影像 → 疾病预测”的？（更临床应用）
+
+---
+
+要不要我帮你画一个**医学影像分支图谱（Medical Imaging Map）**，
+把“成像模态 + 应用领域 + 技术层级”三者直观地可视化出来？
+你看着图就能立刻判断哪种导师最适合你。
+
